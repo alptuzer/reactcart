@@ -2,19 +2,24 @@ import React from 'react'
 import '../styles/cart.css'
 import { useState,useEffect } from 'react';
 
-const Cart = ({ cart, setCart, handleChange }) => {
+const Cart = ({ cart, setCart, handleChange,setTotalItemSize }) => {
     const [price, setPrice] = useState(0);
   
     const handleRemove = (id) => {
       const arr = cart.filter((item) => item.id !== id);
       setCart(arr);
       handlePrice();
+
+
     };
   
     const handlePrice = () => {
       let ans = 0;
-      cart.map((item) => (ans += item.amount * item.price));
+      let total = 0 ;
+      cart.map((item) => (ans += item.amount * item.price)  );
       setPrice(ans);
+      cart.map((item) => (total += item.amount )  );
+      setTotalItemSize(total)
     };
   
     useEffect(() => {

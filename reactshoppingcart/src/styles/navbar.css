@@ -41,3 +41,39 @@
     left: 3px;
   }
   
+
+    .cart {
+    cursor: pointer;
+  }
+  .cart span:nth-child(1) {
+    font-size: 2rem;
+    color: white;
+  }
+  .cart span:nth-child(2) {
+    padding: 0 4px;
+    background-color: red;
+    color: white;
+    font-weight: bolx;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    left: 3px;
+  }
+
+  .cart2 {
+    cursor: pointer;
+  }
+  .cart2 span:nth-child(1) {
+    font-size: 2rem;
+    color: white;
+  }
+  .cart2 span:nth-child(2) {
+    padding: 0 4px;
+    background-color: red;
+    color: white;
+    font-weight: bolx;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+    left: 3px;
+  }
